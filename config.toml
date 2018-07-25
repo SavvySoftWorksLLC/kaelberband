@@ -1,0 +1,5 @@
+staticDir = "static"
+baseURL = ""
+languageCode = "en-us"
+title = "Kaelber"
+publishDir = "docs"

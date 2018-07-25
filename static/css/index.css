@@ -1,0 +1,479 @@
+:root {
+  /*--nav: #0F0974;*/
+  --nav: #090542;
+  --about: #5F0F92;
+  --calendar: #9F7120;
+  --gallery: #1C174F;
+  --footer: #29090C;
+  --footer-credit: #0A0000;
+
+  --gray-dark: #545E63;
+  --gray-light: #C0D6E3;
+}
+
+body {
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+h1 { font-size: 2.0em; }
+h2 { font-size: 1.7411em; }
+h3 { font-size: 1.5157em; }
+h4 { font-size: 1.3195em; }
+h5 { font-size: 1.1487em; }
+h6 { font-size: 1.0em; }
+
+#overlay{
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray-dark);
+  opacity: 0.8;
+  z-index:1001;
+}
+
+#overlay-content{ 
+  position: absolute;
+  display: none;
+  z-index:1002;
+  margin: 0 auto;
+  margin: 16px;
+}
+
+.spash-logo {
+  max-width: 480px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.garallax {
+  height: 72vh !important;
+  width: 100%;
+  box-shadow: inset -4px -8px 16px 4px rgba(0,0,0, 0.3), 4px 4px 8px rgba(0,0,0, 0.3);
+}
+
+#garallax_1 {
+  background: url(../images/parallax/2.jpg) center center fixed;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1025px) {
+  #garallax_1 {
+    background: url(../images/parallax/2_1024.jpg) center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #garallax_1 {
+    background: url(../images/parallax/2_768.jpg) center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #garallax_1 {
+    background: url(../images/parallax/2_414.jpg) center center;
+    background-size: cover;
+  }
+}
+
+#garallax_2 {
+  background: url(../images/parallax/3.jpg) center center fixed;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1025px) {
+  #garallax_2 {
+    background: url(../images/parallax/3_1024.jpg) center center ;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #garallax_2 {
+    background: url(../images/parallax/3_768.jpg) center center ;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #garallax_2 {
+    background: url(../images/parallax/3_414.jpg) center center ;
+    background-size: cover;
+  }
+}
+
+#garallax_3 {
+  background: url(../images/parallax/4.jpg) center center fixed;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1025px) {
+  #garallax_3 {
+    background: url(../images/parallax/4_1024.jpg) center center ;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #garallax_3 {
+    background: url(../images/parallax/4_768.jpg) center center ;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #garallax_3 {
+    background: url(../images/parallax/4_414.jpg) center center ;
+    background-size: cover;
+  }
+}
+
+#garallax_4 {
+  background: url(../images/parallax/5.jpg) center center fixed;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1025px) {
+  #garallax_4 {
+    background: url(../images/parallax/5_1024.jpg) center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #garallax_4 {
+    background: url(../images/parallax/5_768.jpg) center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #garallax_4 {
+    background: url(../images/parallax/5_414.jpg) center center;
+    background-size: cover;
+  }
+}
+
+.top-icons {
+  position: fixed;
+  top: 8px;
+  right: 16px;
+  z-index: 1021;
+}
+
+.top-icon {
+  padding-left: 4px;
+}
+
+.jumbotron {
+  margin-bottom: 0rem;
+  text-align: left;
+  height: 100vh;
+  background: url('../images/parallax/1.jpg') center center;
+  background-size: cover;
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+  box-shadow: inset -4px -8px 16px 4px rgba(0, 0, 0, 0.5), 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Lustria', serif;
+}
+
+.jumbotron .jumbotron-name {
+  font-family: 'Lustria', serif;
+  font-size: 8em;
+  text-shadow: 4px 4px 4px var(--nav);
+  color: var(--gray-light);
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+@media screen and (max-width: 769px) {
+  .jumbotron .jumbotron-name {
+    font-size: 3.5em;
+  }
+}
+
+.jumbo-contact-img {
+  max-height: 40px;
+}
+
+.sexy-line{ 
+  display:block;
+  border:none;
+  color:white;
+  height:1px;
+  background:black;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(var(--nav)));
+  width: 100%;
+}
+
+.lead {
+  margin-top: 1em;
+  font-size: 0.8em;
+  position: absolute;
+  top: 8px;
+  left: 32px;
+}
+
+.navbar {
+  font-family: 'Lustria', serif;
+  background-color: var(--nav);
+}
+
+.navbar-brand {
+  font-family: 'Lustria', serif;
+  color: #FFFFFF;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  border-left: 1px solid rgba(255, 255, 255,0);
+  border-right: 1px solid rgba(255, 255, 255,0);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+}
+
+.nav-link:hover {
+  color: var(--main-color-dark);
+}
+
+.navbar-toggler-icon {
+  color: #FFFFFF;
+}
+
+.sm-nav-item {
+  display: none;
+  padding-bottom: 1em;
+}
+
+.sm-nav-item-hr {
+  background-color: #FFFFFF;
+}
+
+.about {
+  font-weight: 300;
+  background-color: var(--about);
+  color: var(--gray-light);
+}
+
+.about-overlay {
+  padding: 2em 0;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,1+48,0+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.cal {
+  background-color: var(--calendar);
+  color: var(--gray-light);
+}
+
+.cal-overlay {
+  padding: 2em 0;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,1+48,0+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.fc-left h2 { color: var(--gray-light); }
+.fc-right button { background-color: var(--gray-light); }
+.fc-day-header { color: var(--gray-light); }
+.fc-day-top { color: var(--gray-light); }
+.fc-today { color: var(--calendar); }
+.fc-day .fc-future { color: var(--gray-light); }
+
+.section-title {
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+.bookings-link { color: var(--gray-light); }
+.bookings-link:hover { color: #FFFFFF; }
+
+.gallery-page {
+  background-color: var(--gallery);
+}
+
+.gallery-overlay {
+  padding: 2em 0;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,1+48,0+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.filter-button {
+  border: 1px solid var(--main-color-dark);
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px var(--main-color-dark);
+  text-align: center;
+  color: var(--main-color-dark);
+  margin-bottom: 1em;
+}
+
+.filter-button:hover {
+  border: 1px solid #FFFFFF;
+  background-color: var(--main-color);
+  color: #ffffff;
+}
+
+.wearecentralpa {
+  background-color: var(--nav);
+}
+
+.wearecentralpa-row {
+  padding: 2em 0;
+}
+
+.wearecentralpa-link {
+  color: #FFFFFF;
+}
+
+.wearecentralpa-link:hover {
+  color: #FFFFFF;
+  text-shadow: 0 1px 2px var(--main-color);
+}
+
+.wearecentralpa-img {
+  max-width: 320px;
+  padding-bottom: 1em;
+}
+
+.footer {
+  background-color: var(--footer);
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+.footer-overlay {
+  padding: 2em 0;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,1+48,0+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.footer-hr { display: none; }
+
+.footer-name {
+  font-family: 'Lustria', serif;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-top: 8px;
+}
+
+.footer-text-div {
+  padding-bottom: 1em;
+}
+
+.footer-logo-div {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.footer-icon-div {
+  text-align: right;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-credits-row {
+  background-color: var(--footer-credit);
+  font-size: 0.8em;
+  color: var(--gray-light);
+  padding: 1em 0 4em 0;
+}
+
+.footer-credit-href { color: var(--gray-light); }
+
+.footer-credit-href:hover { color: #2DB6F2; }
+
+.tail {
+  font-size: 0.8em;
+  color: #DDDDDD;
+  margin: 0 0 8px 0;
+}
+
+.icons-container {
+  width: 100%;
+  position: fixed;
+  bottom: 16px;
+  text-align: center;
+  z-index: 99;
+}
+
+@media screen and (max-width: 769px) {
+  .top-icons { display: none; }
+  .sm-nav-item {
+    display: block;
+  }
+  .wearecentralpa-img { max-width: 200px; }
+}
+
+@media screen and (max-width: 641px) {
+  figure img {
+    max-width: 440px;
+  }
+  .popup {
+    top: 56px !important;
+    z-index: 100 !important;
+  }
+}
+
+@media screen and (max-width: 737px) {
+  figure img {
+    max-width: 480px;
+  }
+  .popup {
+    top: 56px !important;
+    z-index: 100 !important;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  figure img { max-width: 400px;  }
+  .footer-logo-badge { text-align: center; }
+  .footer-text-div { text-align: center; }
+  .footer-icon-div { text-align: center; }
+  .footer-right { text-align: center; }
+  .footer-hr {
+    display: block;
+    background-color: #FFFFFF;
+  }
+  .footer-right { text-align: center; }
+}
+
+@media screen and (max-width: 360px) {
+  figure img { max-width: 320px;  }
+}
