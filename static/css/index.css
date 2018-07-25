@@ -1,6 +1,5 @@
 :root {
-  /*--nav: #0F0974;*/
-  --nav: #090542;
+  --nav: #043167;
   --about: #5F0F92;
   --calendar: #9F7120;
   --gallery: #1C174F;
@@ -212,24 +211,6 @@ h6 { font-size: 1.0em; }
   max-height: 40px;
 }
 
-.sexy-line{ 
-  display:block;
-  border:none;
-  color:white;
-  height:1px;
-  background:black;
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(var(--nav)));
-  width: 100%;
-}
-
-.lead {
-  margin-top: 1em;
-  font-size: 0.8em;
-  position: absolute;
-  top: 8px;
-  left: 32px;
-}
-
 .navbar {
   font-family: 'Lustria', serif;
   background-color: var(--nav);
@@ -344,28 +325,6 @@ h6 { font-size: 1.0em; }
   color: #ffffff;
 }
 
-.wearecentralpa {
-  background-color: var(--nav);
-}
-
-.wearecentralpa-row {
-  padding: 2em 0;
-}
-
-.wearecentralpa-link {
-  color: #FFFFFF;
-}
-
-.wearecentralpa-link:hover {
-  color: #FFFFFF;
-  text-shadow: 0 1px 2px var(--main-color);
-}
-
-.wearecentralpa-img {
-  max-width: 320px;
-  padding-bottom: 1em;
-}
-
 .footer {
   background-color: var(--footer);
   color: #FFFFFF;
@@ -438,7 +397,6 @@ h6 { font-size: 1.0em; }
   .sm-nav-item {
     display: block;
   }
-  .wearecentralpa-img { max-width: 200px; }
 }
 
 @media screen and (max-width: 641px) {
