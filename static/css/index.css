@@ -1,6 +1,7 @@
 :root {
   --nav: #043167;
   --about: #5F0F92;
+  --about-header: #9F9F90;
   --calendar: #9F7120;
   --gallery: #1C174F;
   --footer: #29090C;
@@ -265,6 +266,13 @@ h6 { font-size: 1.0em; }
   background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
+
+.about-headline { font-family: 'Lustria', serif; }
+.about-header { color: var(--about-header); }
+.about-hr { border-top: 1px solid #FFFFFF; }
+.about-image { border-radius: 50%; border: 2px solid #FFFFFF; }
+.about-image-role { font-size: 0.8em; }
+.about-list { list-style-type: none; }
 
 .cal {
   background-color: var(--calendar);
