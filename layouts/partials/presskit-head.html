@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- robots -->
+<!-- you may configure it in the front matter of the page or in site params -->
+{{ if or (isset .Params "robots") (isset .Site.Params "robots") }}
+<meta name="robots" content="{{ with .Params.robots }}{{ . }}{{ else }}{{ .Site.Params.robots }}{{ end }}">
+{{ end }}
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory
+     or place appropriate <link .../> etc in favicon.html partial -->
+{{ partial "favicon.html" . }}
+
+<title>KAELBER | Press Kit</title>
+
+{{ .Hugo.Generator }}
+
+<meta property="og:url" content="http://www.kaelberband.com/" />
+<meta property="og:title" content="Kaelber" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="Kaelber" />
+
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/index.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/gallery.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/jquery.qtip.min.css" />
+
+
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type='text/javascript' src='{{ .Site.BaseURL }}js/jquery.qtip.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<script src="{{ .Site.BaseURL }}js/moment.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+<script type='text/javascript' src='{{ .Site.BaseURL }}js/gcal.js'></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" />
+
+<script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/index.js"></script>

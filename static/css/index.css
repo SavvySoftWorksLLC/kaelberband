@@ -443,3 +443,70 @@ h6 { font-size: 1.0em; }
 @media screen and (max-width: 360px) {
   figure img { max-width: 320px;  }
 }
+
+/* PRESSKIT */
+
+.presskit {
+  background-color: var(--nav);
+  background: url('../images/Kaelber_StageAE_029.jpg') center center;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+.presskit-overlay {
+  background-color: rgba(51, 51, 51, .5);
+  height: 100%;
+  width: 100%;
+}
+.presskit-section { margin-bottom: 2em; }
+
+.presskit-header { padding: 4em 0; }
+.presskit-header a {
+  font-family: 'Lustria', serif;
+  color: #FFFFFF;
+}
+
+.presskit-header a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-shadow: 0 1px #FFFFE5;
+}
+
+.presskit-booking-content a { color: #FFFFE5; }
+
+.presskit-social-icon {
+  height: 48px;
+  padding-right: 1em;
+}
+
+.presskit-social-right {
+  text-align: right;
+}
+
+.presskit-media {}
+
+.presskit-media-icon-div {
+  padding-bottom: 2em;
+  text-align: center;
+}
+.presskit-media-icon-div a { color: #FFFFFF; }
+.presskit-media-icon {
+  height: 40px;
+  padding-right: 1em;
+}
+
+.presskit-media-iframe { text-align: center; }
+.presskit-media-iframe iframe { box-shadow: 0 2px 2px #FFFFE5; }
+
+.presskit-media-other-youtube { text-align: center; }
+.presskit-media-other-youtube a { color: #FFFFE5; }
+
+.presskit-press .presskit-press-row a { color: #FFFFE5; }
+.presskit-press-row {
+  margin-bottom: 1em;
+}
+
+.presskit-notable ul li {
+  list-style: none;
+  padding-bottom: 4px;
+}

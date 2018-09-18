@@ -10,5 +10,14 @@
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title></title>
+      <link>/presskit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/presskit/</guid>
+      <description>  {{ partial &#34;presskit-head.html&#34; . }}  {{ partial &#34;presskit-header&#34; . }} {{ partial &#34;presskit-booking&#34; . }} {{ partial &#34;presskit-about&#34; . }} {{ partial &#34;presskit-media&#34; . }} {{ partial &#34;presskit-press&#34; . }} {{ partial &#34;presskit-notable&#34; . }}    </description>
+    </item>
+    
   </channel>
 </rss>
